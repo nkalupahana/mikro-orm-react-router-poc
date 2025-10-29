@@ -9,6 +9,9 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@mikro-orm/core": "^6.5.9",
+    "@mikro-orm/reflection": "^6.5.9",
+    "@mikro-orm/sqlite": "^6.5.9",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
     "isbot": "^5.1.31",
@@ -17,14 +20,17 @@
     "react-router": "^7.9.2"
   },
   "devDependencies": {
+    "@mikro-orm/cli": "^6.5.9",
     "@react-router/dev": "^7.9.2",
     "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "tailwindcss": "^4.1.13",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
