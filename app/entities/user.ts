@@ -1,19 +1,11 @@
-import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+import { defineEntity, type InferEntity } from '@mikro-orm/core';
 
-@Entity()
-export class User {
-   @PrimaryKey()
-   id!: number;
+export const User = defineEntity({
+   name: 'User',
+   properties: p => ({
+      id: p.integer().primary(),
+      name: p.string()
+   })
+})
 
-   @Property()
-   fullName!: string;
-
-   @Property()
-   email!: string;
-
-   @Property()
-   password!: string;
-
-   @Property({ type: 'text' })
-   bio = '';
-}
+export interface IUser extends InferEntity<typeof User> {}

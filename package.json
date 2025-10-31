@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@mikro-orm/core": "^6.5.9",
-    "@mikro-orm/reflection": "^6.5.9",
     "@mikro-orm/sqlite": "^6.5.9",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
@@ -30,7 +29,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "vite": "^7.1.7",
-    "vite-plugin-dts": "^4.5.4",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
