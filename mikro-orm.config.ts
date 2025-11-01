@@ -1,5 +1,5 @@
 import { type Options, SqliteDriver } from '@mikro-orm/sqlite';
-import { User } from './entities/user';
+import { User } from './app/entities/user';
 
 const config = {
   driver: SqliteDriver,
